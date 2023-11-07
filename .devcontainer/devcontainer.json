@@ -1,0 +1,25 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "true"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.vscode-codeql",
+				"slevesque.vscode-zipexplorer"
+			],
+			"settings": {
+				"codeQL.runningQueries.memory": 4096
+			}
+		}
+	},
+	  
+	"postCreateCommand": "./.devcontainer/install_pmd.sh && ./.devcontainer/install_infer.sh"
+}
