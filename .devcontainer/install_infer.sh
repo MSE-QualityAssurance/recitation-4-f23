@@ -11,4 +11,4 @@ echo 'export PATH=/opt/infer-linux64-1.1.0/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # Remove the infer-linux
-sudo rm infer-linux64-v1.1.0.tar.xz
+sudo rm infer-linux64-v1.1.0.tar.xz*
