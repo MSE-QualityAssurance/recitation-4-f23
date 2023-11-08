@@ -10,7 +10,7 @@
 
 1. In the current repository, go to `<> Code > Codespaces > Create codespace on main`. 
 2. Wait until the container finishes building.
-3. After the Codespaces open, wait until receiving the message that the setup is complete.
+3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes.
 
 **Local Setup**
 
@@ -23,12 +23,10 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 ├── README.md
 ├── projects/
     ├── infer/
-        └── src/main/
     ├── pdm/
-        └── src/main/
     └── spotbugs/
         └── src/main/
-└── resources/       Presentation from the Recitation
+└── resources/              Presentation from the Recitation
 ```
 
 # Exercises
