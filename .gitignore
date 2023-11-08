@@ -1,5 +1,6 @@
 # Just in case
 infer-linux64-v1.1.0.tar.xz
+infer-out
 
 # Compiled class file
 *.class
