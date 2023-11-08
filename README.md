@@ -25,7 +25,6 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
     ├── infer/
     ├── pdm/
     └── spotbugs/
-        └── src/main/
 └── resources/              Presentation from the Recitation
 ```
 
@@ -37,7 +36,6 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 2. Open the classes `Student` and `App` and analyze what each one of them do.
 3. Execute the following command in terminal: `infer --bufferoverrun -- mvn clean package`
 4. Analyze the output generated in the `infer-out` folder.
-
 
 
 ### Exercise 2 (PDM): 
