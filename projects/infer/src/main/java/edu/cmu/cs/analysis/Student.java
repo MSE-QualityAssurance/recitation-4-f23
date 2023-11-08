@@ -34,6 +34,10 @@ public class Student {
 
     // Set the courses of the student
     public void setCourses(String[] courses) {
-        this.courses = courses;
+
+        // Copy the courses
+        for (int i = 0; i < courses.length; i++) {
+            this.courses[i] = courses[i];
+        }
     }
 }

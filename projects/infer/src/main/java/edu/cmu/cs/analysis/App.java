@@ -1,6 +1,6 @@
 package main.java.edu.cmu.cs.analysis;
 
-import Student;
+import edu.cmu.cs.analysis.Student;
 
 public class App {
     public static void main(String[] args) {
