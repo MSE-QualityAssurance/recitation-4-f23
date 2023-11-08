@@ -33,6 +33,11 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 ### Exercise 1 (Infer): 
 
+1. In the terminal, change to the infer project directory (`projects/infer`).
+2. Open the classes `Student` and `App` and analyze what each one of them do.
+3. Execute the following command in terminal: `infer --bufferoverrun -- mvn clean package`
+4. Analyze the output generated in the `infer-out` folder.
+
 
 
 ### Exercise 2 (PDM): 
