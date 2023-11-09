@@ -1,4 +1,4 @@
-package main.java.edu.cmu.cs.analysis;
+package edu.cmu.cs.analysis;
 
 import edu.cmu.cs.analysis.Student;
 
