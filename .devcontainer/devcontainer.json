@@ -13,7 +13,8 @@
 		"vscode": {
 			"extensions": [
 				"github.vscode-codeql",
-				"slevesque.vscode-zipexplorer"
+				"slevesque.vscode-zipexplorer",
+				"ms-vscode.live-server"
 			],
 			"settings": {
 				"codeQL.runningQueries.memory": 4096
