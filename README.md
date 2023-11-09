@@ -43,7 +43,7 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 ### Exercise 2 (PMD): 
 
 1. Open the class `CoffeeMachine` to understand its functionality.
-2. Execute the command:
+2. 2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
 
     ```pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt```
 3. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
@@ -56,4 +56,9 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 ### Exercise 3 (SpotBugs):
 
+1. The `spotbugs` folder containsa  project that allows you to visualize the participants and spectators of a Volleyball game, as well as, any incoming games between players.
+2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
+
+```mvn site```
+3. Analyze the `.html` report present in `target/site/summary.html`.
 
