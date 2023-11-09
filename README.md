@@ -42,11 +42,11 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 ### Exercise 2 (PMD): 
 
-1. Open the class `CoffeeMachine` and run it to understand its functionality.
+1. Open the class `CoffeeMachine` to understand its functionality.
 2. Execute the command 
     ```pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt```.
 3. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
-4. Add three new rules to the `ruleset.xml` that analysis the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
+4. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
     * **Best Practices:** `switch` statements should always contain a `default` case, allowing it to process undefined cases. 
     * **Code Style:** Variable names should be descriptive of the information type they contain. For example, `hasWater` is an `int` value, but the prefix assumes the variable is a `boolean`.
     * **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
