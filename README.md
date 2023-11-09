@@ -60,5 +60,6 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
 
 ```mvn site```
+
 3. Analyze the `.html` report present in `target/site/summary.html`.
 
