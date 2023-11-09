@@ -37,12 +37,12 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 1. Open the classes `Student` and `App` and analyze what each one of them does.
 2. In the terminal, change to the infer project directory (`projects/infer`).
 3. Execute the following command in the terminal: `infer --bufferoverrun -- mvn clean package`
-4. Analyze the output generated in the `infer-out` folder.
+4. Analyze the output generated in the `infer-out` folder. Does it raise any error, and, if so, what program points are responsible?
 
 
 ### Exercise 2 (PMD): 
 
-1. Open the class `CoffeeMachine`.
+1. Open the class `CoffeeMachine` and run it to understand its functionality.
 2. Execute the command 
     ```pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt```.
 3. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
@@ -51,8 +51,6 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
     * **Code Style:** Variable names should be descriptive of the information type they contain. For example, `hasWater` is an `int` value, but the prefix assumes the variable is a `boolean`.
     * **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
     For example, changing the amount of water when calling `buyCappuccino` requires changes to line `87` and `95`.
-
-
 
 
 ### Exercise 3 (SpotBugs): 

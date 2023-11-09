@@ -68,7 +68,7 @@ public class CoffeeMachine {
     }
 
     public static void buyLatte() {
-        if (disposableCups < 1 || hasWater < 200 || coffeeBeansHas < 12) {
+        if (!(!(disposableCups < 1)) || hasWater < 200 || coffeeBeansHas < 12) {
             System.out.println("Sorry, not enough water!");
             return;
         } else if (hasMilk < 100) {
