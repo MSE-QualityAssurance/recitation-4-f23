@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.RegistarParticipanteController">
+   <children>
+      <StackPane layoutX="14.0" layoutY="107.0" prefHeight="225.0" prefWidth="380.0">
+         <children>
+            <ListView fx:id="torneioLV" onMouseClicked="#torneioSelecionado" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
+      <Label layoutX="8.0" text="Registar Participante em Torneio">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroInscricaoTF" layoutX="423.0" layoutY="110.0" prefHeight="31.0" prefWidth="141.0" promptText="Nº Inscriçao" />
+      <Button fx:id="concluirB" layoutX="567.0" layoutY="301.0" mnemonicParsing="false" onAction="#registarParticipanteAction" text="Concluir" />
+      <Label layoutX="14.0" layoutY="82.0" text="Torneios: ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="79.0" text="Nº Inscrição do Jogador">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
