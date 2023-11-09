@@ -53,5 +53,6 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
     For example, changing the amount of water when calling `buyCappuccino` requires changes to line `87` and `95`.
 
 
-### Exercise 3 (SpotBugs): 
+### Exercise 3 (SpotBugs):
+
 
