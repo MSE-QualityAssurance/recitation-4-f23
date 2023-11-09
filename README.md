@@ -47,7 +47,8 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 ```
 pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt`
-``
+```
+
 4. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
 5. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
     - **Best Practices:** `switch` statements should always contain a `default` case, allowing it to process undefined cases.
@@ -61,7 +62,9 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt`
 1. The `spotbugs` folder containsa  project that allows you to visualize the participants and spectators of a Volleyball game, as well as, any incoming games between players.
 2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
 
-```mvn site```
+```
+mvn site
+```
 
 3. Analyze the `.html` report present in `target/site/summary.html`.
 
