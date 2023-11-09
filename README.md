@@ -43,7 +43,7 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 ### Exercise 2 (PDM): 
 
 1. Open .
-2. Execute the command `pmd check -R ruleset.xml src/`.
+2. Execute the command `pmd check -f html -R ruleset.xml src/`.
 
 
 
