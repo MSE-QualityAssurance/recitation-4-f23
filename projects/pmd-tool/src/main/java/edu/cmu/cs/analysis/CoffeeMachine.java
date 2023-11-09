@@ -7,8 +7,8 @@ import java.util.Scanner;
  */
 public class CoffeeMachine {
     static Scanner scanner = new Scanner(System.in);
-    static int waterHas = 400;
-    static int milkHas = 540;
+    static int hasWater = 400;
+    static int hasMilk = 540;
     static int coffeeBeansHas = 120;
     static int disposableCups = 9;
     static int money = 550;
@@ -53,59 +53,57 @@ public class CoffeeMachine {
             case "3":
                 buyCappuccino();
                 break;
-            default:
-                break;
         }
     }
     public static void buyEspresso() {
-        if (disposableCups < 1 || waterHas < 250 || coffeeBeansHas < 16) {
+        if (disposableCups < 1 || hasWater < 250 || coffeeBeansHas < 16) {
             System.out.println("Sorry, not enough water!");
             return;
         }
         disposableCups -= 1;
-        waterHas -= 250;
+        hasWater -= 250;
         coffeeBeansHas -= 16;
         money += 4;
         System.out.println("I have enough resources, making you a coffee!");
     }
 
     public static void buyLatte() {
-        if (disposableCups < 1 || waterHas < 350 || coffeeBeansHas < 20) {
+        if (disposableCups < 1 || hasWater < 200 || coffeeBeansHas < 12) {
             System.out.println("Sorry, not enough water!");
             return;
-        } else if (milkHas < 75) {
+        } else if (hasMilk < 100) {
             System.out.println("Sorry, not enough milk!");
             return;
         }
         disposableCups -= 1;
-        waterHas -= 350;
-        milkHas -= 75;
-        coffeeBeansHas -= 20;
+        hasWater -= 200;
+        hasMilk -= 100;
+        coffeeBeansHas -= 12;
         money += 7;
-        System.out.println("I have enough resources, making you a coffee!");
+        System.out.println("I have enough resources, making you a latte!");
     }
 
     public static void buyCappuccino() {
-        if (disposableCups < 1 || waterHas < 200 || coffeeBeansHas < 12) {
+        if (disposableCups < 1 || hasWater < 350 || coffeeBeansHas < 20) {
             System.out.println("Sorry, not enough water!");
             return;
-        } else if (milkHas < 100) {
+        } else if (hasMilk < 75) {
             System.out.println("Sorry, not enough milk!");
             return;
         }
         disposableCups -= 1;
-        waterHas -= 200;
-        milkHas -= 100;
-        coffeeBeansHas -= 12;
+        hasWater -= 350;
+        hasMilk -= 75;
+        coffeeBeansHas -= 20;
         money += 6;
-        System.out.println("I have enough resources, making you a coffee!");
+        System.out.println("I have enough resources, making you a cappuccino!");
     }
 
     public static void fill() {
         System.out.println("Write how many ml of water you want to add:");
-        waterHas += scanner.nextInt();
+        hasWater += scanner.nextInt();
         System.out.println("Write how many ml of milk you want to add:");
-        milkHas += scanner.nextInt();
+        hasMilk += scanner.nextInt();
         System.out.println("Write how many grams of coffee beans you want to add:");
         coffeeBeansHas += scanner.nextInt();
         System.out.println("Write how many disposable cups of coffee you want to add:");
@@ -119,8 +117,8 @@ public class CoffeeMachine {
 
     public static void remaining() {
         System.out.println("The coffee machine has:");
-        System.out.printf("%d ml of water\n", waterHas);
-        System.out.printf("%d ml of milk\n", milkHas);
+        System.out.printf("%d ml of water\n", hasWater);
+        System.out.printf("%d ml of milk\n", hasMilk);
         System.out.printf("%d g of coffee beans\n", coffeeBeansHas);
         System.out.printf("%d disposable cups\n", disposableCups);
         System.out.printf("$%d of money\n\n", money);

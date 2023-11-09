@@ -6,12 +6,10 @@
     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        My custom rules
+        In this file, you describe your own custom rules for the project.
     </description>
 
 
     <!-- Your rules will come here -->
-    <rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
-    <rule ref="category/java/bestpractices.xml/SystemPrintln" />
-    
+
 </ruleset>

@@ -2,6 +2,7 @@
 infer-linux64-v1.1.0.tar.xz
 infer-out
 target/
+pmd-report.*
 
 # Compiled class file
 *.class
