@@ -12,6 +12,8 @@
 2. Wait until the container finishes building.
 3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes.
 
+![Building the final setup](.devcontainer/build-finish.png)
+
 **Local Setup**
 
 Follow the instructions presented in [Homework 4 - Static Analysis](https://canvas.cmu.edu/courses/36250/assignments/614274). This setup is not recommended for the purpose of the recitation (it may take sometime to setup).
