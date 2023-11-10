@@ -63,7 +63,7 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt`
 2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
 
 ```
-mvn site
+mvn spotbugs:check
 ```
 
 3. Analyze the `.html` report present in `target/site/summary.html`.
