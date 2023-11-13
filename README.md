@@ -10,7 +10,8 @@
 
 1. In the current repository, go to `<> Code > Codespaces > Create codespace on main`. 
 2. Wait until the container finishes building.
-3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes.
+3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes (Check the image).
+4. After the setup is done, **close the Terminal and open a new window to use the tools**.
 
 ![Building the final setup](.devcontainer/build-finish.png)
 
