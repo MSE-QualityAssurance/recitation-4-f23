@@ -66,5 +66,5 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt`
 mvn spotbugs:check
 ```
 
-3. Analyze the `.html` report present in `target/site/summary.html`.
+3. Analyze the types of bugs raised after executing the command.
 
