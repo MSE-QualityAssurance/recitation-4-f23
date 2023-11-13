@@ -14,10 +14,12 @@
 			"extensions": [
 				"github.vscode-codeql",
 				"slevesque.vscode-zipexplorer",
-				"ms-vscode.live-server"
+				"ms-vscode.live-server",
+				"vscjava.vscode-java-debug"
 			],
 			"settings": {
-				"codeQL.runningQueries.memory": 4096
+				"codeQL.runningQueries.memory": 4096,
+                "java.server.launchMode": "Standard"
 			}
 		}
 	},
