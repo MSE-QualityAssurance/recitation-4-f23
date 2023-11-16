@@ -38,7 +38,7 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 A list of [properties Infer checks can be found here](https://fbinfer.com/docs/all-issue-types).
 
-### Exercise 2 (PDM): 
+### Exercise 2 (PMD): 
 
 1. Open the class `CoffeeMachine` to understand its functionality.
 2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
