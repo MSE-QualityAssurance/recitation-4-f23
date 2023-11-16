@@ -33,7 +33,10 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 1. Open the classes `Student` and `App` and analyze what each one of them does.
 2. In the terminal, change to the infer project directory (`projects/infer`).
-3. Execute the following command in the terminal: `infer --bufferoverrun -- mvn clean package`
+3. Execute the following command in the terminal: 
+```
+infer --bufferoverrun -- mvn clean package
+```
 4. Analyze the output generated in the `infer-out` folder. Does it raise any error, and, if so, what program points are responsible?
 
 A list of [properties Infer checks can be found here](https://fbinfer.com/docs/all-issue-types).
@@ -47,8 +50,8 @@ A list of [properties Infer checks can be found here](https://fbinfer.com/docs/a
 pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
 ```
 
-4. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
-5. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
+3. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
+4. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
     - **Best Practices:** `switch` statements should always contain a `default` case, allowing it to process undefined cases.
     -  **Code Style:** Variable names should be descriptive of the information type they contain. For example, `hasWater` is an `int` value, but the prefix assumes the variable is a `boolean`.
     - **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
