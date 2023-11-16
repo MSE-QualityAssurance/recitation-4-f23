@@ -11,3 +11,4 @@ unzip pmd-dist-7.0.0-rc4-bin.zip
 
 # Export PMD to the PATH
 echo 'export PATH=/home/vscode/pmd-bin-7.0.0-rc4/bin/:$PATH' >> ~/.bashrc
+source ~/.bashrc

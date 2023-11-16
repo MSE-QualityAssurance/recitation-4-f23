@@ -1,8 +1,4 @@
-# 17 623 Quality Assurance: Recitation 2 Fall 2023
-
-*Work in Progress*
-
----
+# 17 623 Quality Assurance: Recitation 4 Fall 2023
 
 ## Installation
 
@@ -10,7 +6,8 @@
 
 1. In the current repository, go to `<> Code > Codespaces > Create codespace on main`. 
 2. Wait until the container finishes building.
-3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes.
+3. After the Codespaces open, wait until receiving the message that the setup is Done and the terminal closes (Check the image).
+4. After the setup is done, **close the Terminal and open a new window to use the tools**.
 
 ![Building the final setup](.devcontainer/build-finish.png)
 
@@ -40,14 +37,17 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 4. Analyze the output generated in the `infer-out` folder. Does it raise any error, and, if so, what program points are responsible?
 
 
-### Exercise 2 (PMD): 
+### Exercise 2 (PDM): 
 
 1. Open the class `CoffeeMachine` to understand its functionality.
-2. Execute the command:
+2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
 
-    ```pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt```
-3. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
-4. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
+```
+pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
+```
+
+4. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
+5. Add three new rules to the `ruleset.xml` that analyzes the code and detects an error. The [Index for Java Rules can be found here](https://docs.pmd-code.org/latest/pmd_rules_java.html). Each rule should detect one of the following properties:
     - **Best Practices:** `switch` statements should always contain a `default` case, allowing it to process undefined cases.
     -  **Code Style:** Variable names should be descriptive of the information type they contain. For example, `hasWater` is an `int` value, but the prefix assumes the variable is a `boolean`.
     - **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
@@ -56,4 +56,12 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 
 ### Exercise 3 (SpotBugs):
 
+1. The `spotbugs` folder contains a  project that allows you to visualize the participants and spectators of a Volleyball game, as well as, any incoming games between players.
+2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
+
+```
+mvn spotbugs:check
+```
+
+3. Analyze the types of bugs raised after executing the command.
 
