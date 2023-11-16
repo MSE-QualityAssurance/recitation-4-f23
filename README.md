@@ -36,6 +36,7 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 3. Execute the following command in the terminal: `infer --bufferoverrun -- mvn clean package`
 4. Analyze the output generated in the `infer-out` folder. Does it raise any error, and, if so, what program points are responsible?
 
+A list of [properties Infer checks can be found here](https://fbinfer.com/docs/all-issue-types).
 
 ### Exercise 2 (PDM): 
 
