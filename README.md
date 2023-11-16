@@ -40,10 +40,10 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 ### Exercise 2 (PMD): 
 
 1. Open the class `CoffeeMachine` to understand its functionality.
-2. 2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
+2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
 
 ```
-pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt`
+pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
 ```
 
 4. Analyze the `pmd-report.txt` report file generated. Which of the rules in `ruleset.xml` were triggered and why? 
