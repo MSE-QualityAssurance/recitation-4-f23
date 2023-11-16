@@ -1,4 +1,4 @@
-# 17 623 Quality Assurance: Recitation 2 Fall 2023
+# 17 623 Quality Assurance: Recitation 4 Fall 2023
 
 *Work in Progress*
 
