@@ -1,9 +1,5 @@
 # 17 623 Quality Assurance: Recitation 4 Fall 2023
 
-*Work in Progress*
-
----
-
 ## Installation
 
 **GitHub Codespaces**
