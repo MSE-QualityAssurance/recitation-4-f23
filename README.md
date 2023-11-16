@@ -37,7 +37,7 @@ Follow the instructions presented in [Homework 4 - Static Analysis](https://canv
 4. Analyze the output generated in the `infer-out` folder. Does it raise any error, and, if so, what program points are responsible?
 
 
-### Exercise 2 (PMD): 
+### Exercise 2 (PDM): 
 
 1. Open the class `CoffeeMachine` to understand its functionality.
 2. In the terminal, change to the pmd-tool project directory (`projects/pmd-tool`) and execute the command:
