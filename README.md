@@ -56,7 +56,7 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
 
 ### Exercise 3 (SpotBugs):
 
-1. The `spotbugs` folder containsa  project that allows you to visualize the participants and spectators of a Volleyball game, as well as, any incoming games between players.
+1. The `spotbugs` folder contains a  project that allows you to visualize the participants and spectators of a Volleyball game, as well as, any incoming games between players.
 2. In the terminal, change to the spotbugs project directory (`projects/spotbugs`) and execute the command:
 
 ```
