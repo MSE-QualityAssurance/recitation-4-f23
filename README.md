@@ -57,6 +57,10 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
     - **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
     For example, changing the amount of water when calling `buyCappuccino` requires changes to line `87` and `95`.
 
+Note: If you would like to run all the code style rules for java, you can include the rule:
+```
+<rule ref="category/java/codestyle.xml" />
+```
 
 ### Exercise 3 (SpotBugs):
 
@@ -67,11 +71,10 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
 mvn spotbugs:check
 ```
 
-To obtain a `.xml` report rather than printing in the command line, execute the following command: 
+To obtain a `.xml` report rather than printing in the command line, execute the following command. To read the entire report in one screen, you may want to wrap the text (`CMD + Shift + P > Wrap > Toggle Word Wrap`): 
 
 ```
 mvn spotbugs:spotbugs
 ```
 
 3. Analyze the types of bugs raised after executing the command.
-
