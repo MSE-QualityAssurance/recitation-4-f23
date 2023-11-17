@@ -67,5 +67,11 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
 mvn spotbugs:check
 ```
 
+To obtain a `.xml` report rather than printing in the command line, execute the following command: 
+
+```
+mvn spotbugs:spotbugs
+```
+
 3. Analyze the types of bugs raised after executing the command.
 
