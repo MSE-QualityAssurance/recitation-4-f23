@@ -57,7 +57,7 @@ pmd check --rulesets=ruleset.xml -d src/main/java --report-file pmd-report.txt
     - **Error Prone:** Values in `if` conditions should not be hardcoded, as changes to a value may require manual change into multiple lines, which is prone to errors. 
     For example, changing the amount of water when calling `buyCappuccino` requires changes to line `87` and `95`.
 
-Note: If you would like to run all the code style rules for Java, you can include the rule:
+Note: If you would like to run all the best practice rules for Java, you can include the rule:
 ```
 <rule ref="category/java/bestpractices.xml" />
 ```
